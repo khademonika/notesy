@@ -13,7 +13,7 @@ export default function Home() {
   const [notes, setNotes] = useState<Note[]>([])
   const [activeNote, setActiveNote] = useState<Note | null>(null)
   const [isEditing,setIsEditing] = useState(false)
-  console.log(activeNote);
+  // console.log(activeNote);
 
   useEffect(()=>{
     setNotes(loadNotes())

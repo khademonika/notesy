@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card'
+import { Card, CardContent, CardFooter, CardTitle } from './ui/card'
 import { Note } from '@/lib/types'
 import { formatDate } from '@/lib/storage'
 import { Button } from './ui/button'
@@ -10,7 +10,7 @@ interface NoteViewProps {
 }
 function NoteView({ note ,onEdit}: NoteViewProps) {
     return (
-        <Card>
+        <Card className='px-5'>
             <CardTitle>{note.title}</CardTitle>
             <p className='text-sm text-muted-foreground'>
                 {formatDate(note.createAt)}

@@ -1,4 +1,3 @@
-import { json } from "stream/consumers"
 import { Note } from "./types"
 
 const STORAGE_KEY = 'notes'
